@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Case Study of Project 3</title>
+  <meta name="description" content="Case study page of Project" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://kit.fontawesome.com/dc5006d776.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__content">
+      <div class="header__logo-container">
+        <div class="header__logo-img-cont">
+          <img src="./assets/png/viraj.jpeg" alt="Ram Maheshwari Logo Image" class="header__logo-img" />
+        </div>
+        <span class="header__logo-sub">Viraj Vasant Gund</span>
+      </div>
+      <div class="header__main">
+        <ul class="header__links">
+          <li class="header__link-wrapper">
+            <a href="./index.html" class="header__link"> Home </a>
+          </li>
+          <li class="header__link-wrapper">
+            <a href="./index.html#about" class="header__link">About </a>
+          </li>
+          <li class="header__link-wrapper">
+            <a href="./index.html#projects" class="header__link">
+              Projects
+            </a>
+          </li>
+          <li class="header__link-wrapper">
+            <a href="./index.html#name" class="header__link"> Contact </a>
+          </li>
+        </ul>
+        <div class="header__main-ham-menu-cont">
+          <img src="./assets/svg/ham-menu.svg" alt="hamburger menu" class="header__main-ham-menu" />
+          <img src="./assets/svg/ham-menu-close.svg" alt="hamburger menu close"
+            class="header__main-ham-menu-close d-none" />
+        </div>
+      </div>
+    </div>
+    <div class="header__sm-menu">
+      <div class="header__sm-menu-content">
+        <ul class="header__sm-menu-links">
+          <li class="header__sm-menu-link">
+            <a href="./index.html"> Home </a>
+          </li>
+
+          <li class="header__sm-menu-link">
+            <a href="./index.html#about"> About </a>
+          </li>
+
+          <li class="header__sm-menu-link">
+            <a href="./index.html#projects"> Projects </a>
+          </li>
+
+          <li class="header__sm-menu-link">
+            <a href="./index.html#contact"> Contact </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <section class="project-cs-hero">
+    <div class="project-cs-hero__content">
+      <h1 class="heading-primary">Let's Chat</h1>
+      <div class="project-cs-hero__info">
+        <p class="text-primary">
+          This is a chat application, implemented using Flask-SocketIO with both the database (PostgreSQL) and the app
+          deployed in Heroku. It also has user registration and authentication functionalities.
+        </p>
+      </div>
+      <div class="project-cs-hero__cta">
+        <a href="https://rchat-app.herokuapp.com/" class="btn btn--bg" target="_blank">Live Link</a>
+      </div>
+    </div>
+  </section>
+  <section class="project-details">
+    <div class="main-container">
+      <div class="project-details__content">
+        <div class="project-details__showcase-img-cont">
+          <img src="./assets/jpeg/letschat.jpg" alt="Project Image"
+            class="project-details__showcase-img" />
+        </div>
+        <div class="project-details__content-main">
+          <div class="project-details__desc-para">
+            <h3 class="project-details__content-title"><b>Project Overview</b></h3>
+            <p class="project-details__desc-para">
+            <div class="SelectMenu-list SelectMenu-list--borderless p-2" style="overscroll-behavior: contain;">
+              <div id="readme" class="Box-body readme blob js-code-block-container p-5 p-xl-6 gist-border-0">
+                <article class="markdown-body entry-content container-lg" itemprop="text">
+                  <h1>Chat App Using Flask-SocketIO &amp; Deployed in Heroku</h1>
+                  <h2>Introduction</h2>
+                  <p>This is a chat application, implemented using Flask-SocketIO with both the database (PostgreSQL)
+                    and the app deployed in Heroku. It also has user registration and authentication functionalities.
+                  </p>
+                  <h2><a id="user-content-demo" class="anchor" aria-hidden="true" href="#demo"><svg
+                        class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16"
+                        aria-hidden="true">
+                        <path fill-rule="evenodd"
+                          d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z">
+                        </path>
+                      </svg></a>Demo</h2>
+                  <p><a target="_blank" rel="noopener noreferrer"
+                      href="https://github.com/sandeepsudhakaran/rchat-app/blob/master/static/images/demo-on-github.gif"><img
+                        src="https://github.com/sandeepsudhakaran/rchat-app/raw/master/static/images/demo-on-github.gif"
+                        alt="RChat - Chat rooms are back in style!" width="40%" height="40%"
+                        style="max-width: 100%;"></a></p>
+                  <h2><a id="user-content-files-in-the-program" class="anchor" aria-hidden="true"
+                      href="#files-in-the-program"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1"
+                        width="16" height="16" aria-hidden="true">
+                        <path fill-rule="evenodd"
+                          d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z">
+                        </path>
+                      </svg></a>Files in the program</h2>
+                  <ul>
+                    <li><strong>application.py</strong>: This is the main app file and contains both the
+                      registration/login page logic and the Flask-SocketIO backend for the app.</li>
+                    <li><strong>models.py</strong>: Contains Flask-SQLAlchemy models used for user registration and
+                      login in application.py</li>
+                    <li><strong>wtform_fields.py</strong>: Contains the classes for WTForms/Flask-WTF and the custom
+                      validators for the fields</li>
+                    <li><strong>create.py</strong>: optional file only required if repo is to be cloned. </li>
+                    <li><strong>Procfile</strong>: file required for Heroku</li>
+                    <li><strong>requirements.txt</strong>: list of Python packages installed (also required for Heroku)
+                    </li>
+                    <li><strong>templates/</strong>: folder with all HTML files</li>
+                    <li><strong>static/</strong>: for with all JS scripts and CSS files</li>
+                  </ul>
+                  <h2><a id="user-content-usage" class="anchor" aria-hidden="true" href="#usage"></h2>
+                  <h2>Introduction</h2>
+                  <p> main advantage of this application is anonymity i.e. a user is not obligated to provide any kind
+                    of personal information during any phase of the application. In addition, he/she can access the
+                    application via any platform like desktop, laptop or even a simple smartphone as the user side
+                    requirements for this application is just an updated browser.
+                    The username and password are also stored in the database as an encrypted version so even a system
+                    owner will not be able to access any information of any user. </p><br>
+                  <div></div><strong>FUN FACT:-</strong> it will take you 1100000000000 X 10^46 years to crack the
+                  sha256 encrypted password which is more than current earth existence.
+              </div>
+              <h2>Features</h2>
+              <ul class="fa-ul">
+                <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Web enabled</li>
+                <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Portable and flexible for further
+                  enhancement</li>
+                <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Reduced errors due to human
+                  intervention</li>
+                <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Flexible</li>
+                <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Time Saver</li>
+                <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Security</li>
+                <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Anonymity</li>
+                <li><span class="fa-li"><i class="fas fa-check-square"></i></span>User-Friendly UI</li>
+                <li><span class="fa-li"><i class="fas fa-check-square"></i></span>No user side requirement</li>
+              </ul>
+
+
+              </ol>
+              </article>
+            </div>
+
+          </div>
+
+
+          </p>
+        </div>
+        <div class="project-details__tools-used">
+          <h3 class="project-details__content-title">Tools Used</h3>
+          <div class="skills">
+            <div class="skills__skill">HTML</div>
+            <div class="skills__skill">CSS</div>
+            <div class="skills__skill">Python</div>
+            <div class="skills__skill">JavaScript</div>
+            <div class="skills__skill">SASS</div>
+            <div class="skills__skill">GIT</div>
+            <div class="skills__skill">Socket Programming</div>
+            <div class="skills__skill">Heroku</div>
+
+          </div>
+        </div>
+        <div class="project-details__links">
+          <h3 class="project-details__content-title">See Live</h3>
+          <a href="https://rchat-app.herokuapp.com/" class="btn btn--med btn--theme project-details__links-btn" target="_blank">Live Link</a>
+          <a href="https://github.com/virajgund31/Let-s-Chat/tree/main/Web-Chat-Application-with-python-master" class="btn btn--med btn--theme-inv project-details__links-btn" target="_blank">Code Link</a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <footer class="main-footer">
+    <div class="main-container">
+      <div class="main-footer__upper">
+        <div class="main-footer__row main-footer__row-1">
+          <h2 class="heading heading-sm main-footer__heading-sm">
+            <span>Social</span>
+          </h2>
+          <div class="main-footer__social-cont">
+            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/viraj-gund/">
+              <img class="main-footer__icon" src="./assets/png/linkedin-ico.png" alt="icon" />
+            </a>
+            <a target="_blank" rel="noreferrer" href="https://github.com/virajgund31">
+              <img class="main-footer__icon" src="./assets/png/github-ico.png" alt="icon" />
+            </a>
+            <!--<a target="_blank" rel="noreferrer" href="https://twitter.com/FLEXTER95">
+              <img class="main-footer__icon" src="./assets/png/twitter-ico.png" alt="icon" />
+            </a>-->
+
+            <a target="_blank" rel="noreferrer" href="https://instagram.com/mi_marathi._">
+              <img class="main-footer__icon main-footer__icon--mr-none" src="./assets/png/insta-ico.png" alt="icon" />
+            </a>
+          </div>
+        </div>
+        <div class="main-footer__row main-footer__row-2">
+          <h4 class="heading heading-sm text-lt">Viraj Vasant Gund</h4>
+          <p class="main-footer__short-desc">
+            while(noSuccess) {<br>
+            &nbsp;&nbsp;&nbsp; if(!dead) {<br>
+            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; tryAgain();<br>
+            &nbsp;&nbsp;&nbsp;}<br>
+            }
+          </p>
+        </div>
+      </div>
+
+      <div class="main-footer__lower">
+        &copy; Copyright 2021. Made by
+        <a rel="noreferrer" target="_blank" href="https://github.com/virajgund31">Viraj Vasant Gund</a>
+      </div>
+    </div>
+  </footer>
+  <script src="./index.js"></script>
+</body>
+
+</html>
